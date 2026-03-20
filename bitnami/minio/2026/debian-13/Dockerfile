@@ -4,8 +4,8 @@
 FROM golang:1.26.1 AS build
 
 # latests commits on master
-RUN go install -v github.com/biggusdonzus/minio@4815d2ad9a7f8cb916768e089570c10842d3926e
-RUN go install -v github.com/biggusdonzus/mc@59f5d59b032d12b05367227f1fedb81be43638fc
+RUN go install -v github.com/biggusdonzus/minio@478ac91012fe6a4585d889dc8891b29094304f2d
+RUN go install -v github.com/biggusdonzus/mc@34c7017e7d8070dcef23ae218d3795f74a560e3b
 
 FROM docker.io/bitnami/minideb:trixie
 
